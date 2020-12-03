@@ -7,11 +7,50 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="cards-gallery.css">
 
       <title>Steve Murphy</title>
   </head>
     
     <style>
+
+        .carousel {
+            margin-top: 10px;
+            margin-bottom: 10px;
+           }
+        
+        .fa {
+            width: 90px;
+            padding: 20px;
+            font-size: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 20px 8px;
+            border-radius: 30%;
+            }
+
+            .fa:hover {
+            opacity: 0.7;
+            }
+        
+        .fa-instagram {
+            background: #cb2027;
+            color: white;
+            }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+        .fa-behance {
+            background: #0099cc;
+            color: white;
+            }
         
         
         .navbar-brand img {
@@ -31,7 +70,7 @@
       
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="img/Logo_SM.png" alt="logo"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/Logo_SM.png" class=alt="logo"></a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,22 +80,36 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="Bio.html">Bio</a>
+                          <a class="dropdown-item" href="ProductDes.html">Education</a>
+                        <a class="dropdown-item" href="Hobbies.html">Personal Interests</a>
+                        </div>
+                    </li>
             <li class="nav-item ">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="ProductDes.html">Design</a>
             </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UI/UX</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Main</a>
+                          <a class="dropdown-item" href="Arduino.html">Arduino</a>
+                        <a class="dropdown-item" href="gallery.html">Photo Gallery</a>
+                        <a class="dropdown-item" href="AudioVideo.html">Audio/Video</a>
+                        </div>
+                    </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">Design</a>
-            </li>
-        
-            <li class="nav-item ">
-                <a class="nav-link" href="#">UI/UX</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Connect</a>
+                <a class="nav-link" href="Connect.html">Connect</a>
             </li>
         </ul>
     </div>
 </nav>
+
+      
+
+      
 
       
 <!-- Carousel -->
@@ -74,22 +127,22 @@
                         <div class="carousel-item active img-fluid">
                             <img src="img/prototype_cropped.jpg" style="width: 100%" alt="prototype">
                         <div class="carousel-caption">
-                        <h2 class="display-2">Prototyping</h2>
-                        <h3> From aesthetic modelling to functional prototying</h3>
+                        <!-- <h2 class="display-2">Prototyping</h2> -->
+                        <h5> From aesthetic modelling to functional prototying</h5>
                         </div>
                         </div>
                         <div class="carousel-item">
                         <img src="img/machining_cropped.jpg" style="width: 100%" alt="machining">
                         <div class="carousel-caption">
-                        <h2 class="display-2">Machining</h2>
-                        <h3>One-off machined part or batch production</h3>
+                        <!-- <h2 class="display-2">Machining</h2> -->
+                        <h5>One-off machined part or batch production</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <img src="img/photography_cropped.jpg" style="width: 100%" alt="photography">
                         <div class="carousel-caption">
-                        <h2 class="display-2">Photography</h2>
-                        <h3>Product photographing or project documenting</h3>
+                        <!--<h5 class="display-2">Photography</h5> -->
+                        <h5>Product photographing or project documenting</h5>
                             </div>
                         </div>
                     </div>
@@ -97,65 +150,101 @@
         </div>
     </div> 
 </div>
-      
+
 <!-- Jumbotron -->
       
 <div class="jumbotron bg-light text-dark">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="display-3 float-left ">Welcome to my site</h1>
-                <p>I'm glad of all the sites in all the World Wide Web, you chose to visit mine. Feel free to browse, pick stuff up, try stuff on. If you want to talk just hit that "Contact Me" button. </p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
-            </div>
-            <div class="col-md-6">
-            <img src="img/profile.jpg" width=100% alt="steve" />
+            <div class="col-lg-12 text-center">
+                <h1 class="display-3 ">Welcome to my site</h1>
+                <h6>I'm glad of all the sites in all the World Wide Web, you chose to visit mine.</h6>
+                <h6>Below are some of the highlighs of my website. Feel free to browse and if you want to find out more about any of these projects, please click on the links.</h6>
+                <h6>If you would like to discuss these projects more, or you think we could collaborate in the future, please contact me using the link below.</h6>
+                <p><a class="btn btn-dark text-light btn-lg" href="#" role="button">Contact Me &raquo;</a> </p>
             </div>
         </div>
     </div>
 </div>
+      
+
       
 <!-- Cards -->
 
 <div class="container-fluid py-2 bg-light">
     <div class="row padding">
-        <div class="col-md-4">
+
+    <div class="col-md-4 py-1">
+        <div class="card">
+            <img class="card-img-top" src="img/levers.jpg" alt="buttons and levers">
+            <div class="card-body bg-dark text-light">
+                <h2 class="card-title text-center">Design</h2>
+                <p class="card-text">
+            If you are interested in learing more about my work in Product Desig and UI/UX Design I have a page showing a portfolio of some of my work click the button to find out more</p>
+                <a href="#" class="btn btn-light text-dark btn-lg">See More...</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 py-1">
+        <div class="card">
+            <img class="card-img-top" src="img/Still%20Life_cropped.jpg" alt="legoman">
+            <div class="card-body bg-dark text-light">
+                <h4 class="card-title">Recent Project</h4>
+                <p class="card-text">A recent assignment required me to go ount and compose, capture and edit 5 images with the theme "Life". If you would liek to see some of the work then you know what to do. Hit that "View Gallery" button.</p>
+                <a href="gallery.html" class="btn btn-light text-dark btn-lg">View Gallery</a>
+            </div>
+        </div>
+    </div>
+     <div class="col-md-4 py-1">
             <div class="card">
                 <img class="card-img-top" src="img/Camper.JPG" alt="campervan">
-                <div class="card-body">
-                    <h4 class="card-title"> Vanlife</h4>
+                <div class="card-body bg-dark text-light">
+                    <h4 class="card-title"> Personal Interests</h4>
                     <p class="card-text">This weekend we took the van and decided to expore the west coast a little bit. We ended up on west Kerry, and during a Red Weather Warning. See how we got on by clicking that button.</p>
-                    <a href="#" class="button btn-outline-secondary">See Profile</a>
+                    <a href="#" class="btn btn-light text-dark btn-lg">See Profile</a>
                 </div>
             </div>
         </div>
-    <div class="col-md-4">
+            <div class="col-md-4 py-1">
         <div class="card">
-            <img class="card-img-top" src="img/levers.jpg" alt="buttons and levers">
-            <div class="card-body">
-                <h4 class="card-title">Interactive Design</h4>
+            <img class="card-img-top" src="img/Capture_Tool.jpg" alt="cardboard_prototype">
+            <div class="card-body bg-dark text-light">
+                <h4 class="card-title">Doccufy Capture Tool</h4>
                 <p class="card-text">
-            For a whistelstop tour of some of Don Normans design attribues of products, click on the following link to see some of my examples</p>
-                <a href="#" class="button btn-outline-secondary">See More...</a>
+            Pictured here is the mid-fidelity prototype of a capture tool developed to enable users to capture documetns wit their phone. The tool was part of a syste of document storage developed for a UIUX project</p>
+                <a href="#" class="btn btn-light text-dark btn-lg">See More...</a>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 py-1">
         <div class="card">
-            <img class="card-img-top" src="img/Still%20Life_cropped.jpg" alt="legoman">
-            <div class="card-body">
-                <h4 class="card-title">Recent Project</h4>
-                <p class="card-text">A recent assignment required me to go ount and compose, capture and edit 5 images with the theme "Life". If you would liek to see some of the work then you know what to do. Smash that See images button!!</p>
-                <a href="#" class="button btn-outline-secondary">See Profile</a>
+            <img class="card-img-top" src="img/Scenario_2_Doccufy.JPG" alt="app screen">
+            <div class="card-body bg-dark text-light">
+                <h4 class="card-title">Doccufy Interface Design</h4>
+                <p class="card-text">A screen grab of a mid-fidelity digital prototype recently designed as part of a UIUX project for my Masters in User Interaction and Experience Design. Created using Figma</p>
+                <a href="gallery.html" class="btn btn-light text-dark btn-lg">View Gallery</a>
             </div>
         </div>
     </div>
+     <div class="col-md-4 py-1">
+            <div class="card">
+                <img class="card-img-top" src="img/Sound_Story.jpg" alt="cabin">
+                <div class="card-body bg-dark text-light">
+                    <h4 class="card-title">Sound Story</h4>
+                    <p class="card-text">I recently submitted for review my first Sound Story. It was a 3 week project to develop skills in audio editing. The full audio track is availbel to listen to here.</p>
+                    <a href="#" class="btn btn-light text-dark btn-lg">See Profile</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
       
+      
+
+      
 <!-- Tiles -->
       
-<div class="album py-4 bg-light">
+<!--<div class="album py-4 bg-light">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3">
@@ -214,6 +303,18 @@
        </div>
     </div>
    </div>
+-->
+      
+<div class="container-fluid text-center bg-light">
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-behance"></a>
+        </div>
+    </div>
+</div>
       
 <!-- Footer -->
     
@@ -224,7 +325,7 @@
              <a href="#">
                 <img src="img/Logo_SM.png" height="100px" class="d-inline-block align-middle"  alt=" my logo"></a>
                  <p> Product Design . Prototyping . UI/UX</p>
-            </div>
+                 </div>
             <div class="col-md-4 pb-3 pl-5 pr-5">
                 <h4>Contact Me:</h4>
             <ul class="list-unstyled">
@@ -257,6 +358,16 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>    
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
