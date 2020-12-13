@@ -8,22 +8,110 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-      
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="cards-gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
 
       <title>Steve Murphy</title>
   </head>
     
     <style>
         
+    .jumbotron6 {
+    align-items:center;
+    display:flex;
+    background-image:url(img/Coast.jpg);
+    background-size:cover;
+    background-blend-mode:hard-light
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-color:#898888;
+    min-height: 60em; 
+    color:white;
+    margin-bottom: 1em;
+        }
+        
+    .jumbotron3 {
+    align-items:center;
+    display:flex;
+    background-image:url(img/Light_of_my_Life.jpg);
+    background-size:cover;
+    background-position: top; /* position at the top */
+    background-repeat: no-repeat;
+    background-color:#898888;
+    min-height: 50em; /* height in relative units */ 
+    color:white;
+}
+        
+    .jumbotron2 {
+    align-items:center;
+    display:flex;
+    background-image:url(img/Jumbo%20Backcground.jpg);
+    background-size:cover;
+    background-position: top; 
+    background-repeat: no-repeat;
+    background-color:#898888;
+    min-height: 30em; 
+    color:white;
+}
+    .jumbotron1 {
+    align-items:center;
+    display:flex;
+    background-image:url(img/Jumbo%20Backcground.jpg);
+    background-size:cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-color:#898888;
+    min-height: 30em; 
+    color:white;
+} 
+        
+        .fa {
+            width: 90px;
+            padding: 20px;
+            font-size: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 20px 8px;
+            border-radius: 30%;
+            }
+
+            .fa:hover {
+            opacity: 0.7;
+            }
+        
+        .fa-instagram {
+            background: #cb2027;
+            color: white;
+            }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+        .fa-behance {
+            background: #0099cc;
+            color: white;
+            }
+        
+        
+        
+        .jumbotron6 img {
+            width: 100%;
+        }
         
         .navbar-brand img {
             height: 75px;
         }
-        .footer img {
-            height: 100px;
+        .navbar-footer img {
+            height: 125px;
+            margin-top: 2em;
         }
         .body {
             background-color: light;
@@ -36,38 +124,36 @@
       
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="img/Logo_SM.png" class=alt="logo"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/Logo_SM.png" alt="logo"></a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
     </button>
     </div>
     <div class="collapse navbar-collapse text-light" id="navbarResponsive">
         <ul class=" navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                  <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="Bio.html">Bio</a>
-                            <a class="dropdown-item" href="ProductDes.html">Education</a>
-                            <a class="dropdown-item" href="Hobbies.html">Personal Interests</a>
+                          <a class="dropdown-item" href="ProductDes.html">Education</a>
+                        <a class="dropdown-item" href="Hobbies.html">Personal Interests</a>
                         </div>
                     </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="ProductDes.html">Design</a>
-            </li>
-                  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UI/UX</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Main</a>
-                        <a class="dropdown-item" href="Arduino.html">Arduino</a>
+                            <a class="dropdown-item" href="#">Main</a>
+                            <a class="dropdown-item" href="ProductDes.html">Product Design</a>
+                          <a class="dropdown-item" href="Arduino.html">Physical Computing</a>
                         <a class="dropdown-item active" href="gallery.html">Photo Gallery</a>
                         <a class="dropdown-item" href="AudioVideo.html">Audio/Video</a>
                         </div>
                     </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">Connect</a>
+                <a class="nav-link" href="Connect.html">Connect</a>
             </li>
         </ul>
     </div>
@@ -75,33 +161,39 @@
       
 <!-- Jumbotron -->
       
-<div class="jumbotron bg-light text-dark">
+      <div class="jumbotron8 bg-dark text-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="display-3 ">My Gallery</h1>
-                <p>On this page I have shared some of my recent photgraphy projetcs. I have tried to curate trhem into themes and for the most part i have shared some commentary on each image. I love photograpy and come from a family of professional photgraphers. If your interested in their work, here are some links to their sites. My interest in photography is predominantly on landscape and street photgraphy. Ive been luck enough to see some amazing palces aroudn the world over the years and in this page I will share a snapshot of some of these places. I hoep you enjoy.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
-            </div>
-            <div class="col-md-6">
-            <img src="img//Hochi.JPG" width=140% alt="ho_chi_ming" />
+            <div class="col-md-12">
+                <h1 class="display-1 py-5 text-center">My Gallery</h1>
             </div>
         </div>
     </div>
 </div>
       
-<div class="jumbotron bg-dark text-light">
+<div class="jumbotron6 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="display-3 ">Life</h1>
-                <p>The folowing collection of images were captures edited and curated for a recent photography assignemnt as part of my Masters course. The imgages needed to relate to the thene "LIFE" and also needed to conform to a number of other learning based constraints.</p>
-                <p>I found this project really interesting and fun. Going out into nature and trying to capture some of the "in the moment" feelings was already a favourite pass-time of mine, so I didn't need alot of convincing!!!</p>
-                <p>I hope you like them.</p>
+            <div class="col-md-12">
+                <p>On this page I have shared some of my recent photgraphy projects.</p>
+                <p>I have tried to curate trhem into themes and for the most part I have shared some commentary on each image. I love photograpy and come from a family of professional photgraphers. </p>
+                <p>If your interested in their work, here are some links to their sites. My interest in photography is predominantly on landscape and street photgraphy. Ive been luck enough to see some amazing palces aroudn the world over the years and in this page I will share a snapshot of some of these places.</p>
+                <p> I hope you enjoy.</p>
                 <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
             </div>
-            <div class="col-md-6">
-            <img src="img/Light_of_my_Life.jpg" img-class="fluid" width=140% alt="street_light" />
+        </div>
+    </div>
+</div>
+      
+<div class="jumbotron3 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-3 ">Life</h1>
+                <p class="display-5">The folowing collection of images were captures edited and curated for a recent photography assignemnt as part of my Masters course. The imgages needed to relate to the thene "LIFE" and also needed to conform to a number of other learning based constraints.</p>
+                <p>I found this project really interesting and fun. Going out into nature and trying to capture some of the "in the moment" feelings was already a favourite pass-time of mine, so I didn't need alot of convincing!!!</p>
+                <p>I hope you like them.</p>
+                <p><a class="btn btn-dark btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
             </div>
         </div>
     </div>
@@ -118,12 +210,26 @@
 	                    <div class="card-body">
 	                        <h6><a href="#">Still Life</a></h6>
 	                        <p class="text-muted card-text">Somewhere on the Wild Atlantic Way. The views were unbelievable</p>
-                            <p class="text-muted card-text">I like the image as it ues the rule of thirds quiet clearly. The foreground is a lit too dark so could do with some editing in photoshop. The image was teken using my smartphone with the default camera app. The file is saved as a Jpeg so editing may not be very effective.</p>
+                            <p class="text-muted card-text">This image represents the fun things in life. Toys, imagination, recreation, and indeed life goals
+                                are all represented in the image of this motorcycle cop as he diligently goes about his daily duties,
+                                    protecting the citizens of Big Block City.</p>
+                            <h6>Composition:</h6>
+                            <p class=" text-muted card-text">The image follows the rule of thirds. The motorcyclists eye is at the intersection of the upper third
+                                and the right third. The items in the background represent the sprawling metropolis and the depth
+                                of field makes the main subject stand out.
+                                The items and the main subject are arranged so that the source of light for the image corresponds
+                                with the painted light reflection on the motorcycle and motorcyclist.
+                                Different height blocks at different distances from the camera were used to add depth to the
+                                image.</p>
+                            <p class=" text-muted card-text">The aperture settings were restricted on my camera set-up, I would have preferred a bit
+                                more depth of field. If I was trying to improve the image, I would proably add a little more fore-ground so that the shadow of the cyclist is not cut so severely on the right.</p>
                             <h6>Camera Details:</h6>
                             <ul class="list-unstyled text-muted card-text">
                             <li>Sony 6500</li>
                             <li>16-50mm lens</li>
-                            <li>auto ISO</li>
+                            <li>ISO - 160</li>
+                            <li>Shutter Speed 1/60</li>
+                            <li>Aperture f3.5</li>
                             </ul>
 	                    </div>
 	                </div>
@@ -135,13 +241,28 @@
 		                </a>
 	                    <div class="card-body">
 	                        <h6><a href="#">Life in Metaphor</a></h6>
-	                        <p class="text-muted card-text">The Connor Pass linking Killarney to Dingle. Not for the faint hearted, the road etiquette relies on drivers allowing several cars to pass at any limited straight section. In the old days, the coaches of tourists had an agreeement that they would all use the road as a one way system on the Ring of Kerry.</p>
-                            <p class="text-muted card-text">The Connor Pass linking Killarney to Dingle. Not for the faint hearted, the road etiquette relies on drivers allowing several cars to pass at any limited straight section. In the old days, the coaches of tourists had an agreeement that they would all use the road as a one way system on the Ring of Kerry.</p>
+	                        <p class="text-muted card-text">“Everyone goes with the flow, but the one who goes against the flow becomes someone remarkable
+                                in life” Swami Vivekananda
+                            </p>
+                            <p class="text-muted card-text">The flow of water represents the flow of life, in this case, it is a torrent, a whirling unstoppable force
+                                of life. At times we try to swim against the flow, the branch represents the futile nature of trying to
+                                fight the passage of time.</p>
+                            <p class="text-muted card-text">I wanted to get an image that showed movement. Photographs record a single moment in time, I
+                                saw this as a challenge to try and give the image the apprearance of movement.</p>
+                            <h6>Composition:</h6>
+                            <p class="text-muted card-text">The image is roughly split into the traditional rule of thirds, with the tree-line in the background and
+                                the suggested line from the stone wall in the foreground splitting the image into horizontal thirds.
+                                The bushes either side and the alignment of the branch in the water with the edge of the stone also
+                                split the image.The image needed a foreground to anchor the image so the stone wall remained in the lower left corner.
+                                The trees at the far side of the river form the horizon line and were straightened in post processing.Finally, rather than have the flow of water from left to right which is preferred for viewing, the water flows from
+                                right to left to further enhance the battle of the branch against the water flow.</p>
                             <h6>Camera Details:</h6>
                             <ul class="list-unstyled text-muted card-text">
                             <li>Sony 6500</li>
                             <li>16-50mm lens</li>
-                            <li>auto ISO</li>
+                            <li>ISO - 160</li>
+                            <li>Shutter Speed 1/2</li>
+                            <li>Aperture f22</li>
                             </ul>
 	                    </div>
 	                </div>
@@ -153,13 +274,26 @@
 	                	</a>
 	                    <div class="card-body">
 	                        <h6><a href="#">Life Source</a></h6>
-	                        <p class="text-muted card-text">Looking down on the birthpalce of Daniel O Connell.</p>
-                            <p class="text-muted card-text">I wanted to get a good vantage point to get both the camper and the view from the mountain pass. As I drove along, I came accross a rocky outcrop that almost over-hung the road. Armed with my dslr I clombed the rock face and snapped this image. No processing, but look at tha view.</p>
+	                        <p class="text-muted card-text">“It is life I think to watch the water, a man can learn so many things” Nicholas Sparks</p>
+                            <p class="text-muted card-text">All life on earth came from water. It truly is the source of all life. As if to prove this, the image of
+                                the stream shows the abundance of life that grows and exists because of water. Like the Nile delta
+                                in Egypt, this little stream provides nutrients and water for the wealth of greenery it flows through.</p>
+                            <h6>Composition</h6>
+                            <p class="text-muted card-text">The sound of the small waterfall drew my attention so I went off the pathway and found this lovely
+                                pool of Life. I took a number of test pictures and adjusted my settings with the intention of shooting
+                                as much of the scene as possible and then cropping later in post. Using the rule of thirds as a guide,
+                                I made the stream the center of the images, the water then flows slightly to the left before coming
+                                back in the calm water flowing from left to right. The leaves frame the upper third and the two tree
+                                trunks provide some symmetry. The picture was taken from an angle that allowed some of the suns
+                                rays to hit the pool of water and bounce a reflection to provide even more life to the image</p>
+                             <p class="text-muted card-text">I ended up cropping this image quiet a bit more that I would have liked. I think it lost some of the detail because of this. If re-taking it, I would frame it slightly better and not have to cut so much from the borders.</p>
                             <h6>Camera Details:</h6>
                             <ul class="list-unstyled text-muted card-text">
                             <li>Sony 6500</li>
                             <li>16-50mm lens</li>
-                            <li>auto ISO</li>
+                            <li>ISO - 800</li>
+                            <li>Shutter Speed 1/50</li>
+                            <li>Aperture f3.5</li>
                             </ul>
 	                    </div>
 	                </div>
@@ -170,8 +304,31 @@
 	                		<img src="img//Life%20in%20a%20Nutshell.jpg" alt="Acorn and leaf" class="card-img-top">
 	                	</a>
 	                    <div class="card-body">
-	                        <h6><a href="#">Life in a Nutshell</a></h6>
-	                        <p class="text-muted card-text">A trail beside a stream fo the freshest "Drinking Water" in all of Ireland.</p>
+	                        <h6><a href="#">Life in a Nut-shell</a></h6>
+	                        <p class="text-muted card-text">“Enormous Oak trees from tiny acorns grow”</p>
+                            <p class="text-muted card-text">This image represents the start of life, as the Autumn season progresses this tiny seed will fall from the Oak
+                                tree and if nurtured by nature, will grow to become a mighty Oak tree, thus the circle of life continues. Life
+                                exists in all living things and nature is full of living things. Over millions of years the Oak tree has evolved its
+                                seed to the size and shape we see in the image. Out of the thousands or millions of tree species, the acorns
+                                form is relatively unique.</p>
+                            <h6>Composition</h6>
+                            <p class="text-muted card-text">The simplicity of the acorn draws the eye. It stands out from the leafy background. The main focal point is in
+                                the top right section of the image, conforming to the rule of thirds. The colour of the acorn sets it apart from
+                                the surrounding green of the leaves, again drawing the eye. The small water droplets on the acorn also seem
+                                to pull the viewer further into the images.
+                                Shutter speed was kept low so that any blurring of the moving branch in the breeze would be reduced.
+                                The image reveals itself in three stages: we see the acorn first, then the water droplet as we focus more on
+                                the acorn and then the rest of the image .
+                                The subject of the images is close to the camera to cut out too many distractions, then further cropped in post.</p>
+                             <p class="text-muted card-text">There is something that bugs me about this image. The texture of the nut and the water droplet on it just seems to be out of focus. When I zoom in, I dont think it is, but at this focal length, it jsut seems off. I'd love to go back with a macro lens and shoot it again. Although that nut is long gone!!!</p>
+                            <h6>Camera Details:</h6>
+                            <ul class="list-unstyled text-muted card-text">
+                            <li>Sony 6500</li>
+                            <li>16-50mm lens</li>
+                            <li>ISO - 1600</li>
+                            <li>Shutter Speed 1/60</li>
+                            <li>Aperture f5.6</li>
+                            </ul>
 	                    </div>
 	                </div>
 	            </div>
@@ -181,8 +338,20 @@
 	                		<img src="img/Khufu.jpg" alt="Hike" class="card-img-top">
 	                	</a>
 	                    <div class="card-body">
-	                        <h6><a href="#">Dogs Life</a></h6>
-	                        <p class="text-muted card-text">A well trodden trail in the Killarney Mountains</p>
+                            <h6><a href="#">A Dogs Life</a></h6>
+	                        <p class="text-muted card-text">Eyes like almond apertures to the soul.</p>
+                            <p class="text-muted card-text">This image was taken after about 25 failed attempts and two packets of sliced ham. They say you should never work with animals or kids. I can confirm both. </p>
+                            <h6>Composition</h6>
+                            <p class="text-muted card-text">A classic pet portrait, I wanted this images to be symmetrical. I think I did an ok job except for the paws. The images became very tall and slim but I think it works.</p>
+                             <p class="text-muted card-text">On refection, this would have been good in back and white too but the colours are also nice and vibrant. \The fact that the paw is cropped in the foreground is unfortunate but I ran out of image while cropping.</p>
+                            <h6>Camera Details:</h6>
+                            <ul class="list-unstyled text-muted card-text">
+                            <li>Sony 6500</li>
+                            <li>16-50mm lens</li>
+                            <li>ISO - 250</li>
+                            <li>Shutter Speed 1/100</li>
+                            <li>Aperture f9</li>
+                            </ul>
 	                    </div>
 	                </div>
 	            </div>
@@ -192,54 +361,144 @@
 	                		<img src="img/Light_of_my_Life.jpg" alt="Street light" class="card-img-top">
 	                	</a>
 	                    <div class="card-body">
-	                        <h6><a href="#">Light of my Life</a></h6>
-	                        <p class="text-muted card-text">Getting out into the greenery.</p>
-	                    </div>
+	                        <h6><a href="#">Life in a Nut-shell</a></h6>
+	                        <p class="text-muted card-text">Light give life to a dark night, it gives life to a gloomy pathway. Light makes shadows dance and
+                                light itself dances on the surface of the browning autumn leaves. The lamp in the image gives life
+                                to the foliage which surrounds and encircles the lamp, almost enveloping it as if to try and share in
+                                the warmth of the lamps glow.</p>
+                            <p class="text-muted card-text">
+                                Although the leaves may be fading as the winter draws near, there is still the appearance of life in
+                                the green leaves in the background. A hope for life yet to be lived.</p>
+                            <h6>Composition</h6>
+                            <p class="text-muted card-text">This image attempted to find the natural sequence
+                                (Fibonacci’s sequence in nature). The light falling on the leaves follows the sequence. After experimenting with trying to get the reflection of the lamp and leaves in a puddle of water, I
+                                decided to take the shot directly at the lamp and
+                                change the camera setting to counter the strong
+                                light coming from the lamp.</p>
+                             <p class="text-muted card-text">Although I love the colours in teh image and I am happy to have gotent a decent crack at the Fibonacci composition, the image looks a little thron together. At the time of shootinmg there was a puddle of water developing under the lamp post. I would have loved to have gotten a refelction shot on the puddle with the colours of the leaves. Maybe next year. </p>
+                            <h6>Camera Details:</h6>
+                            <ul class="list-unstyled text-muted card-text">
+                            <li>Sony 6500</li>
+                            <li>16-50mm lens</li>
+                            <li>ISO - 1600</li>
+                            <li>Shutter Speed 1/60</li>
+                            <li>Aperture f5.6</li>
+                            </ul>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
     </section>
 
-<!-- Gallery 2
       
-<div class="container-fluid">
-      <div class="row justify-content-center">
-    <div class="col-md-12">
-        <div class="row mb-4 py-2">
-            <a href="img/Still.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-                <img src="img/still.jpg" class="img-fluid">
-            </a>
-            <a href="img/Metaphor.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-            <img src="img/Metaphor.jpg" class="img-fluid">
-            </a>
-            <a href="img/Life%20Source.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-                <img src="img/Life%20Source.jpg" class="img-fluid">
-            </a>
-        </div>
-        <div class="row mb-4 py-2">
-            <a href="img/Khufu.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-                <img src="img/Khufu.jpg" class="img-fluid">
-            </a>
-            <a href="img/Shell.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-                <img src="img/Shell.jpg" class="img-fluid">
-            </a>
-            <a href="img/Light_of_my_Life.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 py-1">
-                <img src="img/Light_of_my_Life.jpg" class="img-fluid">
-            </a>
+<div class="jumbotron2 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1 class="display-3 text-center">Instagram</h1>
+                <p>Now that you are on my site, why would I ask you to leave?</p>
+                <p>Here are some highlights from ym Instagram account. Its usually where I put all my mobile photography images but here is a quick sneak peak. If you interested you can bounce on the Instagram link at the bottom of the page for more.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Go to my Insta &raquo;</a></p>
+            </div>
         </div>
     </div>
 </div>
-</div> -->
+
       
-<div class="jumbotron bg-dark text-light">
+<section class="gallery-block cards-gallery">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="img/Eiffel.jpg">
+	                		<img src="img/Eiffel.jpg" alt="Eiffel Tower" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">Eiffel</a></h6>
+	                        <p class="text-muted card-text">A view from underneath</p>
+                            <p class="text-muted card-text">Ona very quick walking tour of the main Paris attractions. This image was supposed to pick ip the single point persepctive of the tower.</p>
+                            <h6>Taken on Samsung S10</h6>
+
+	                    </div>
+	                </div>
+	            </div>
+	            	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="img/Wall.jpg">
+	                		<img src="img/Wall.jpg" alt="Wall" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">Wall</a></h6>
+	                        <p class="text-muted card-text">I had no idea how many leading lines images I take until I had to study the types of composition for a recent photgraphy assigment. Here is another one near Lough Gur.</p>
+                            <h6>Taken on Samsung S10</h6>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="img/Leaf.jpg">
+	                		<img src="img/Leaf.jpg" alt="campervan" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">Wroclaw Leaf</a></h6>
+	                        <p class="text-muted card-text">Frozen in time</p>
+                            <p class="text-muted card-text">This leaf attracted my attention whioe out for an early morning photo walk in Wroclaw, Poland.</p>
+                            <h6>Taken on Samsung S10</h6>
+
+	                    </div>
+	                </div>
+	            </div>
+                <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+						<a class="lightbox" href="img/Chair.jpg">
+		                	<img src="img/Chair.jpg" alt="dusty chair" class="card-img-top">
+		                </a>
+	                    <div class="card-body">
+	                        <h6><a href="#">Copenhagan Chair</a></h6>
+	                        <p class="text-muted card-text">Taken through the gates in a restirced area of a round tower in the centre of Copehagan. I like how the light is shining on the chair but there is no-one sittign there. Is gives it a very dramatic appearance. The limits of the phone camera are obvious here.</p>
+                            <h6>Taken on Iphone X</h6>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="img/Port.jpg">
+	                		<img src="img/Port.jpg" alt="Sunset at a port" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">NYC Port</a></h6>
+	                        <p class="text-muted card-text">The city mighjt not sleep but the sun still does. Taken at sunset in N.Y.C.</p>
+                            <h6>Taken on Samsung S10+</h6>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="img/Merry.jpg">
+	                		<img src="img/Merry.jpg" alt="carnival" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">Carnival</a></h6>
+	                        <p class="text-muted card-text">I found the lights and the colours of the carnival in Galway city inspiring. This is a colourful shot of the Merry-go-round.</p>
+                            <h6>Taken on Samsung S10</h6>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+</section>
+    
+    
+    
+<div class="jumbotron1 bg-dark text-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="display-3 ">Outside Ireland</h1>
                 <p>The folowing collection of images were captured on one of my many adventures to the west coast of Ireland. I find that i am almost drawnt to the coast if given the opportunity to explore the countryside.</p>
                 <p>There is a blend of images captures by camera-phone, DSLR and drone. See if you can spot which piece of equipment was used for each shot, if you are stuck on any, let me know...</p>
-                                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Me &raquo;</a></p>
             </div>
         </div>
     </div>
@@ -339,6 +598,19 @@
 	        </div>
 	    </div>
     </section>
+    
+  <!-- Fontawesome Links -->
+    
+ <div class="container-fluid text-center bg-light">
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-behance"></a>
+        </div>
+    </div>
+</div>
       
 <!-- Footer -->
     
@@ -346,9 +618,8 @@
     <div class="container-fluid py-3">
          <div class="row">
              <div class="col-lg-4 pb-3">
-             <a href="#">
-                <img src="img/Logo_SM.png" height="100px" class="d-inline-block align-middle"  alt=" my logo"></a>
-                 <p> Product Design . Prototyping . UI/UX</p>
+             <a class="navbar-footer" href="index.html"><img src="img/Logo_SM.png" alt="logo"></a>
+            <p> Product Design . Prototyping . UI/UX</p>
             </div>
             <div class="col-md-4 pb-3 pl-5 pr-5">
                 <h4>Contact Me:</h4>
